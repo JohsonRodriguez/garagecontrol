@@ -5,6 +5,7 @@ import { PedidosComponent } from './pedidos/pedidos.component';
 import { RouterModule } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
+import { MovilidadesComponent } from './movilidades/movilidades.component';
 
 
 
@@ -15,11 +16,13 @@ import { SharedModule } from '../shared/shared.module';
     DashboardComponent,
     PedidosComponent,
     PagesComponent,
+    MovilidadesComponent,
     
   ],
   exports:[
     DashboardComponent,
-    PedidosComponent
+    PedidosComponent,
+    MovilidadesComponent
   ],
   imports: [
     CommonModule,

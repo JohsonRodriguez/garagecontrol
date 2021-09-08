@@ -6,6 +6,7 @@ import { PagesModule } from './pages/pages.module';
 import { NopageFoundComponent } from './nopage_found/nopage-found/nopage-found.component';
 import { AuthModule } from './auth/auth.module';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -23,7 +24,8 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     PagesModule,
     AuthModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     
   ],
   providers: [],
