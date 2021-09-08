@@ -10,10 +10,14 @@ import { MovilidadService } from '../../services/movilidad.service';
 export class MovilidadesComponent implements OnInit {
 
   movilidades: Movilidades[]=[];
+  qr:string
+  public commonUrl : string = 'http://localhost:8080/movilidad/generateQRCode/100/100/'
   constructor(private movilidadService: MovilidadService) { }
 
   ngOnInit(): void {
+    
     this.cargarMovilidades();
+    this.generarQr();
   }
 
   cargarMovilidades():void{
@@ -25,6 +29,11 @@ export class MovilidadesComponent implements OnInit {
         console.log(err);
       }
     )
+   
+  }
+
+  generarQr():void{
+    this.qr= this.commonUrl 
   }
 
 }

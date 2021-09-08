@@ -8,6 +8,7 @@ import { Movilidades } from '../models/movilidades';
 })
 export class MovilidadService {
   movilidadURL = "http://localhost:8080/movilidad/"
+  
 
   constructor(private httpClient: HttpClient) { }
 
