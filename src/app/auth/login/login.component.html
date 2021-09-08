@@ -1,0 +1,40 @@
+<body>
+    
+
+  <form id="login-form"  (ngSubmit)="login()" [formGroup]="loginForm" autocomplete="off">
+
+    <div>
+            <img src="https://i.ibb.co/CPnpK1T/p4.png" class="logo" >
+    </div>
+
+    <h1>Sign In</h1>
+
+    <div class="input email">
+        <input type="text" value="" placeholder=" " formControlName="email">
+        <label>Email</label>
+    </div>
+    <div class="input email">
+      <input type="password" value="" placeholder=" " formControlName="password">
+      <label>Password</label>
+  </div>
+  <div class="checkboxT">
+    <input type="checkbox" formControlName="remember">
+    <label class="checkbox">Recuerdame</label>
+</div>
+   
+    <button type="submit">
+          <span>Enviar</span>
+    </button>
+    <div >
+      <label class="etiqueta2">
+          <a routerLink="/register">¿Olvidaste tu contraseña?</a> </label>
+    </div>
+
+    <div >
+      <label class="etiqueta">Si no tienes una cuenta puedes registrarte
+          <a routerLink="/register">aquí</a> </label>
+    </div>
+
+</form>
+
+</body>
